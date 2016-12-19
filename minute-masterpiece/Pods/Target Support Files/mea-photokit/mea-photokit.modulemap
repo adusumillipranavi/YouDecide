@@ -1,0 +1,6 @@
+framework module mea_photokit {
+  umbrella header "mea-photokit-umbrella.h"
+
+  export *
+  module * { export * }
+}

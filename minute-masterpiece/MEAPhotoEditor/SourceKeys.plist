@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MPKInstagramSourceSession</key>
+	<dict>
+		<key>NOTE</key>
+		<string>You MUST register &quot;ig&quot; followed by your Instagram ClientId as a URL Scheme in your apps info.plist </string>
+		<key>MPKInstagramClientId</key>
+		<string>7bdaaf76b4ae46f7ac2100334bf80167</string>
+		<key>MPKInstagramSecret</key>
+		<string>5e5c228b8faa451ba5df1d103ee79b5c</string>
+		<key>MPKInstagramRedirectUri</key>
+		<string>http://127.0.0.1</string>
+	</dict>
+	<key>MPKFacebookSourceSession</key>
+	<dict>
+		<key>NOTE</key>
+		<string>You MUST register &quot;fb&quot; followed by your facebook app id as a URL Scheme in your apps plist </string>
+		<key>MPKFacebookAppID</key>
+		<string>279506269112545</string>
+		<key>MPKFacebookPermissions</key>
+		<array>
+			<string>public_profile</string>
+			<string>user_photos</string>
+		</array>
+	</dict>
+	<key>MPKDropboxSourceSession</key>
+	<dict>
+		<key>NOTE</key>
+		<string>You MUST register &quot;db-&quot; followed by your dropbox API Key as a URL Scheme in your apps plist </string>
+		<key>MPKDropboxAppKey</key>
+		<string>aty66uutu8vv2b1</string>
+		<key>MPKDropboxSecret</key>
+		<string>k6cz1hycx04yhji</string>
+	</dict>
+	<key>MPKFlickrSourceSession</key>
+	<dict>
+		<key>NOTE</key>
+		<string>You MUST register &quot;fk&quot; followed by your Flickr API Key as a URL Scheme in your apps info.plist </string>
+		<key>MPKFlickrAPIKey</key>
+		<string>e5563b27dd7d571519a9003118a42b30</string>
+		<key>MPKFlickrSecret</key>
+		<string>53034eb7a009a95e</string>
+	</dict>
+	<key>MPKGoogleSourceSession</key>
+	<dict>
+		<key>MPKGoogleClientId</key>
+		<string>29064941047-snqvgts7qq3rlosa0o0b081vobklpi1g.apps.googleusercontent.com</string>
+		<key>MPKGoogleClientId - 2</key>
+		<string>113409870894-a3n0sa6kl6sjb847mishd70g8f920s15.apps.googleusercontent.com</string>
+		<key>MPKGoogleClientSecret</key>
+		<string>hhy14b67sT-_uYnJ1GHVf7oT</string>
+		<key>MPKGoogleClientSecret - 2</key>
+		<string>B_8x4Hm3pfPH_5TESW2K83kH</string>
+	</dict>
+	<key>MPKTwitterSourceSession</key>
+	<dict>
+		<key>MPKTwitterConsumerKey</key>
+		<string>UGEyHkvI3yq0FTsIZaLUpJPjp</string>
+		<key>MPKTwitterConsumerSecret</key>
+		<string>ZHNqy3TH8qFRAcKwA20x62GWA5BqGikpkfJaHb51nthLYUdNyg</string>
+	</dict>
+	<key>MPKDeviantArtSourceSession</key>
+	<dict>
+		<key>NOTE</key>
+		<string>Besure to include your DeviantArt redirect URL in the info.plist</string>
+		<key>MPKDeviantArtClientId</key>
+		<string>2352</string>
+		<key>MPKDeviantArtClientSecret</key>
+		<string>5b721f7669a26f37d81ff9ce4de90bfc</string>
+	</dict>
+	<key>MPKLiveSourceSession</key>
+	<dict>
+		<key>MPKLiveClientId</key>
+		<string>000000004813DD98</string>
+	</dict>
+	<key>MPKAmazonSourceSession</key>
+	<dict>
+		<key>NOTE</key>
+		<string></string>
+		<key>MPKAmazonApiKey</key>
+		<string>eyJhbGciOiJSU0EtU0hBMjU2IiwidmVyIjoiMSJ9.eyJ2ZXIiOiIzIiwiZW5kcG9pbnRzIjp7ImF1dGh6IjoiaHR0cHM6Ly93d3cuYW1hem9uLmNvbS9hcC9vYSIsInRva2VuRXhjaGFuZ2UiOiJodHRwczovL2FwaS5hbWF6b24uY29tL2F1dGgvbzIvdG9rZW4ifSwiY2xpZW50SWQiOiJhbXpuMS5hcHBsaWNhdGlvbi1vYTItY2xpZW50LjA2MzZkYzViMTRmZTRlZWViNGIxMjBjZGU4NzIyN2MyIiwiYXBwRmFtaWx5SWQiOiJhbXpuMS5hcHBsaWNhdGlvbi44ZWIzMGU1ZjNkZWI0Y2Y4YjE5MDVkY2RmNTU1YmQyMiIsImJ1bmRsZVNlZWRJZCI6ImNvbS5tZWFtb2JpbGUubWVhLXBob3Rva2l0IiwiYnVuZGxlSWQiOiJjb20ubWVhbW9iaWxlLm1lYS1waG90b2tpdCIsImlzcyI6IkFtYXpvbiIsInR5cGUiOiJBUElLZXkiLCJhcHBWYXJpYW50SWQiOiJhbXpuMS5hcHBsaWNhdGlvbi1jbGllbnQuYWM0YTQzNDVmYjBjNDgwOTgxMzUzYWE5NTk1NTA5YzYiLCJ0cnVzdFBvb2wiOm51bGwsImFwcElkIjoiYW16bjEuYXBwbGljYXRpb24tY2xpZW50LmFjNGE0MzQ1ZmIwYzQ4MDk4MTM1M2FhOTU5NTUwOWM2IiwiaWQiOiIwZGQzOTkxNC0xZjRhLTExZTUtYjMwYy0wZmJkM2RmNjRiNjMiLCJpYXQiOiIxNDM1NjgzODYyNDgzIn0=.RuYPn/00UT15Xg899PFerTTNuk8+LwtwoBQ/rZwOoYiR5bUy+Y8w0bY+BlQ81+DQRTgw8U1MHxbFiO5SxQ90ZQbgNg2s1xF5KihR5UQ3G+Mot2UKXqC5nt8xd6+qx4B2lrA77ZSy5D8NFVia6c5WkEMRtyjmSecDXL2Z5t6DRVLjGUTaoyIK1jnH5xHmNoWFiodnc8WZh2ixBAi+gQw9ipUUYOgMoyuuxkrGm0BwPClA97cuYd7RlvleOhsnbgNLpoytR42tILq3ya0hJVk7C/Se92RpTpYp9Te2ZjuzOIzJsnCfdWFul9l4PoP9kbA+mXnZSO+6tEhT9r0sB69ulA==</string>
+	</dict>
+</dict>
+</plist>

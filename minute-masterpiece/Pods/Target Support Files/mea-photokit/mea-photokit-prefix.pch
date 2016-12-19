@@ -1,0 +1,10 @@
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#endif
+
+#import <MPKCore.h>
+#import <MPKFacebook.h>
+#import <MPKFlickr.h>
+#import <MPKInstagram.h>
+#import <MPKLocal.h>
+#import <MPKUserInterface.h>

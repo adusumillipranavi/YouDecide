@@ -1,0 +1,446 @@
+{
+  "name": "mea-photokit",
+  "version": "2.0.0",
+  "summary": "A image picker for local and remote sources. WARN: Use gtm-http-fetcher, remove GTMHTTPFetcher",
+  "description": "A image picker for local and remote sources.\n\t***WARN: Use gtm-http-fetcher, remove GTMHTTPFetcher***",
+  "homepage": "https://bitbucket.org/MEAM/mea-photokit",
+  "license": "MIT",
+  "authors": {
+    "Daniel Loomb": "daniel@meamobile.com"
+  },
+  "source": {
+    "git": "https://bitbucket.org/MEAM/mea-photokit.git",
+    "tag": "2.0.0"
+  },
+  "platforms": {
+    "ios": "7.0",
+    "tvos": "9.0"
+  },
+  "requires_arc": true,
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "All",
+      "dependencies": {
+        "mea-photokit/Core": [
+
+        ],
+        "mea-photokit/UserInterface": [
+
+        ],
+        "mea-photokit/Instagram": [
+
+        ],
+        "mea-photokit/InstagramPublic": [
+
+        ],
+        "mea-photokit/Facebook": [
+
+        ]
+      },
+      "ios": {
+        "dependencies": {
+          "mea-photokit/Flickr": [
+
+          ],
+          "mea-photokit/Emoji": [
+
+          ],
+          "mea-photokit/Pinterest": [
+
+          ],
+          "mea-photokit/Local": [
+
+          ],
+          "mea-photokit/Twitter": [
+
+          ],
+          "mea-photokit/Live": [
+
+          ],
+          "mea-photokit/Video": [
+
+          ],
+          "mea-photokit/Amazon": [
+
+          ],
+          "mea-photokit/SanDisk": [
+
+          ]
+        }
+      }
+    },
+    {
+      "name": "Core",
+      "prefix_header_contents": "#import <MPKCore.h>",
+      "source_files": "Pod/Classes/Core/**/*.{h,m}",
+      "resource_bundles": {
+        "mea-photokit-Core": [
+          "Pod/Assets/Core/**/*.{png,storyboard,plist}"
+        ]
+      }
+    },
+    {
+      "name": "UserInterface",
+      "prefix_header_contents": "#import <MPKUserInterface.h>",
+      "dependencies": {
+        "mea-photokit/Core": [
+
+        ]
+      },
+      "ios": {
+        "dependencies": {
+          "MBProgressHUD": [
+            "~> 0.9"
+          ],
+          "RefreshControl": [
+            "~> 1.5"
+          ]
+        }
+      },
+      "source_files": "Pod/Classes/UserInterface/**/*.{h,m}",
+      "tvos": {
+        "exclude_files": "Pod/Classes/UserInterface/ios/*.m"
+      },
+      "resource_bundles": {
+        "mea-photokit-UserInterface": [
+          "Pod/Assets/UserInterface/**/*.{png,storyboard,plist}"
+        ]
+      }
+    },
+    {
+      "name": "Local",
+      "prefix_header_contents": "#import <MPKLocal.h>",
+      "dependencies": {
+        "mea-photokit/Core": [
+
+        ]
+      },
+      "source_files": "Pod/Classes/Local/**/*.{h,m}",
+      "resource_bundles": {
+        "mea-photokit-Local": [
+          "Pod/Assets/Local/**/*.{png,storyboard,plist}"
+        ]
+      }
+    },
+    {
+      "name": "LocalUpload",
+      "prefix_header_contents": "#import <MPKLocalUpload.h>",
+      "dependencies": {
+        "mea-photokit/Local": [
+
+        ],
+        "AWSS3": [
+          "~> 2.3.6"
+        ]
+      },
+      "source_files": "Pod/Classes/LocalUpload/**/*.{h,m}",
+      "resource_bundles": {
+        "mea-photokit-LocalUpload": [
+          "Pod/Assets/LocalUpload/**/*.{png,storyboard,plist}"
+        ]
+      }
+    },
+    {
+      "name": "LocalUploadUI",
+      "prefix_header_contents": "#import <MPKLocalUploadUI.h>",
+      "dependencies": {
+        "mea-photokit/LocalUpload": [
+
+        ]
+      },
+      "source_files": "Pod/Classes/LocalUploadUI/**/*.{h,m}",
+      "resource_bundles": {
+        "mea-photokit-LocalUploadUI": [
+          "Pod/Assets/LocalUploadUI/**/*.{png,storyboard,plist}"
+        ]
+      }
+    },
+    {
+      "name": "Facebook",
+      "prefix_header_contents": "#import <MPKFacebook.h>",
+      "dependencies": {
+        "mea-photokit/Core": [
+
+        ]
+      },
+      "source_files": "Pod/Classes/Facebook/*.{h,m}",
+      "tvos": {
+        "dependencies": {
+          "mea-photokit/Facebook-tvOS": [
+
+          ]
+        }
+      },
+      "ios": {
+        "dependencies": {
+          "mea-photokit/Facebook-iOS": [
+
+          ]
+        }
+      },
+      "resource_bundles": {
+        "mea-photokit-Facebook": [
+          "Pod/Assets/Facebook/**/*.{png,storyboard,plist}"
+        ]
+      }
+    },
+    {
+      "name": "Facebook-tvOS",
+      "dependencies": {
+        "FBSDKTVOSKit": [
+          "~> 4.10"
+        ]
+      },
+      "source_files": "Pod/Classes/Facebook/tvos/*.{h,m}"
+    },
+    {
+      "name": "Facebook-iOS",
+      "dependencies": {
+        "FBSDKLoginKit": [
+          "~> 4.10"
+        ]
+      },
+      "source_files": "Pod/Classes/Facebook/ios/*.{h,m}"
+    },
+    {
+      "name": "Instagram",
+      "prefix_header_contents": "#import <MPKInstagram.h>",
+      "dependencies": {
+        "mea-photokit/Core": [
+
+        ],
+        "SBJson": [
+          "~> 3.2"
+        ]
+      },
+      "source_files": "Pod/Classes/Instagram/**/*.{h,m}",
+      "resource_bundles": {
+        "mea-photokit-Instagram": [
+          "Pod/Assets/Instagram/**/*.{png,storyboard,plist}"
+        ]
+      }
+    },
+    {
+      "name": "InstagramPublic",
+      "prefix_header_contents": "#import <MPKInstagramPublic.h>",
+      "dependencies": {
+        "mea-photokit/Core": [
+
+        ],
+        "mea-photokit/Instagram": [
+
+        ],
+        "SBJson": [
+          "~> 3.2"
+        ]
+      },
+      "source_files": "Pod/Classes/InstagramPublic/**/*.{h,m}"
+    },
+    {
+      "name": "Dropbox",
+      "prefix_header_contents": "#import <MPKDropbox.h>",
+      "dependencies": {
+        "mea-photokit/Core": [
+
+        ],
+        "Dropbox-iOS-SDK": [
+          "~> 1.3.13"
+        ]
+      },
+      "source_files": "Pod/Classes/Dropbox/**/*.{h,m}",
+      "resource_bundles": {
+        "mea-photokit-Dropbox": [
+          "Pod/Assets/Dropbox/**/*.{png,storyboard,plist}"
+        ]
+      }
+    },
+    {
+      "name": "Flickr",
+      "prefix_header_contents": "#import <MPKFlickr.h>",
+      "dependencies": {
+        "mea-photokit/Core": [
+
+        ],
+        "objectiveflickr": [
+          "~> 2.0.4"
+        ]
+      },
+      "source_files": "Pod/Classes/Flickr/**/*.{h,m}",
+      "resource_bundles": {
+        "mea-photokit-Flickr": [
+          "Pod/Assets/Flickr/**/*.{png,storyboard,plist}"
+        ]
+      }
+    },
+    {
+      "name": "Google",
+      "prefix_header_contents": "#import <MPKGoogle.h>",
+      "dependencies": {
+        "mea-photokit/Core": [
+
+        ],
+        "GData": [
+          "~> 1.12.0"
+        ]
+      },
+      "source_files": "Pod/Classes/Google/**/*.{h,m}",
+      "xcconfig": {
+        "OTHER_LDFLAGS": "-lxml2",
+        "HEADER_SEARCH_PATHS": "$(SDKROOT)/usr/include/libxml2"
+      },
+      "resource_bundles": {
+        "mea-photokit-Google": [
+          "Pod/Assets/Google/**/*.{png,storyboard,plist}"
+        ]
+      }
+    },
+    {
+      "name": "Twitter",
+      "prefix_header_contents": "#import <MPKTwitter.h>",
+      "dependencies": {
+        "mea-photokit/Core": [
+
+        ],
+        "FHSTwitterEngine": [
+          "~> 2.0.0"
+        ]
+      },
+      "source_files": "Pod/Classes/Twitter/**/*.{h,m}",
+      "resource_bundles": {
+        "mea-photokit-Twitter": [
+          "Pod/Assets/Twitter/**/*.{png,storyboard,plist}"
+        ]
+      }
+    },
+    {
+      "name": "DeviantArt",
+      "prefix_header_contents": "#import <MPKDeviantArt.h>",
+      "dependencies": {
+        "mea-photokit/Core": [
+
+        ],
+        "deviantART-SDK": [
+          "~> 1.0.4"
+        ]
+      },
+      "source_files": "Pod/Classes/DeviantArt/**/*.{h,m}",
+      "resource_bundles": {
+        "mea-photokit-DeviantArt": [
+          "Pod/Assets/DeviantArt/**/*.{png,storyboard,plist}"
+        ]
+      }
+    },
+    {
+      "name": "Pinterest",
+      "prefix_header_contents": "#import <MPKPinterest.h>",
+      "dependencies": {
+        "mea-photokit/Core": [
+
+        ]
+      },
+      "source_files": "Pod/Classes/Pinterest/**/*.{h,m}",
+      "resource_bundles": {
+        "mea-photokit-Pinterest": [
+          "Pod/Assets/Pinterest/**/*.{png,storyboard,plist}"
+        ]
+      }
+    },
+    {
+      "name": "Live",
+      "prefix_header_contents": "#import <MPKLive.h>",
+      "dependencies": {
+        "mea-photokit/Core": [
+
+        ],
+        "LiveSDK": [
+          "~> 5.6.1"
+        ]
+      },
+      "source_files": "Pod/Classes/Live/**/*.{h,m}",
+      "resource_bundles": {
+        "mea-photokit-Live": [
+          "Pod/Assets/Live/**/*.{png,storyboard,plist}"
+        ]
+      }
+    },
+    {
+      "name": "Video",
+      "prefix_header_contents": "#import <MPKVideo.h>",
+      "dependencies": {
+        "mea-photokit/Core": [
+
+        ],
+        "LiveSDK": [
+          "~> 5.6.1"
+        ]
+      },
+      "source_files": "Pod/Classes/Video/**/*.{h,m}",
+      "resource_bundles": {
+        "mea-photokit-Video": [
+          "Pod/Assets/Video/**/*.{png,storyboard,plist}"
+        ]
+      }
+    },
+    {
+      "name": "Amazon",
+      "prefix_header_contents": "#import <MPKAmazon.h>",
+      "dependencies": {
+        "mea-photokit/Core": [
+
+        ]
+      },
+      "source_files": "Pod/Classes/Amazon/**/*.{h,m}",
+      "frameworks": "Security",
+      "vendored_frameworks": [
+        "Pod/Frameworks/AmazonCloud/ACDSKit.framework",
+        "Pod/Frameworks/AmazonCloud/LoginWithAmazon.framework"
+      ],
+      "resource_bundles": {
+        "mea-photokit-Amazon": [
+          "Pod/Assets/Amazon/**/*.{png,storyboard,plist}"
+        ]
+      }
+    },
+    {
+      "name": "Emoji",
+      "prefix_header_contents": "#import <MPKEmoji.h>",
+      "dependencies": {
+        "mea-photokit/Core": [
+
+        ]
+      },
+      "source_files": "Pod/Classes/Emoji/**/*.{h,m}",
+      "resource_bundles": {
+        "mea-photokit-Emoji": [
+          "Pod/Assets/Emoji/**/*.{png,storyboard,plist}"
+        ]
+      }
+    },
+    {
+      "name": "SanDisk",
+      "prefix_header_contents": "#import <MPKSanDisk.h>",
+      "dependencies": {
+        "mea-photokit/Core": [
+
+        ]
+      },
+      "source_files": "Pod/Classes/SanDisk/**/*.{h,m}",
+      "frameworks": "ExternalAccessory",
+      "libraries": [
+        "c",
+        "c++",
+        "z"
+      ],
+      "vendored_frameworks": [
+        "Pod/Frameworks/SanDisk/iXpandSDKlib.framework",
+        "Pod/Frameworks/SanDisk/iXpandSDKlibSim.framework"
+      ],
+      "resource_bundles": {
+        "mea-photokit-SanDisk": [
+          "Pod/Assets/SanDisk/**/*.{png,storyboard,plist}"
+        ]
+      }
+    }
+  ]
+}

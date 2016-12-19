@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AVYEditorAppearanceBlurStyle</key>
+	<string>dark</string>
+	<key>AVYEditorAppearancePrimaryColor</key>
+	<string>#252525</string>
+	<key>AVYEditorAppearanceSecondaryColor</key>
+	<string>#595959</string>
+	<key>AVYEditorAppearanceBackgroundColor</key>
+	<string>#404040</string>
+	<key>AVYEditorAppearanceContentColor</key>
+	<string>#FFFFFF</string>
+	<key>AVYEditorAppearanceAccentColor</key>
+	<string>#00A8FF</string>
+	<key>AVYEditorAppearanceStatusBarStyle</key>
+	<string>light</string>
+</dict>
+</plist>

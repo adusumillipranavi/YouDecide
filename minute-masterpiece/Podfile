@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'MEAPhotoEditor' do
+	# Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+	use_frameworks!
+
+	# Firebase
+	pod 'Firebase/Auth'
+	pod 'Firebase/Core'
+	pod 'Firebase/AdMob'
+	pod 'Firebase/Storage'
+	pod 'Firebase/Database'
+	
+	# Fabric
+	pod 'Fabric'
+	pod 'Crashlytics'
+	
+	# Photokit
+	pod 'mea-photokit/Local', :git => 'https://bitbucket.org/MEAM/mea-photokit.git', :commit => '99e0abd'
+	pod 'mea-photokit/Facebook', :git => 'https://bitbucket.org/MEAM/mea-photokit.git', :commit => '99e0abd'
+	pod 'mea-photokit/Instagram', :git => 'https://bitbucket.org/MEAM/mea-photokit.git', :commit => '99e0abd'
+	pod 'mea-photokit/Flickr', :git => 'https://bitbucket.org/MEAM/mea-photokit.git', :commit => '99e0abd'
+	pod 'mea-photokit/UserInterface', :git => 'https://bitbucket.org/MEAM/mea-photokit.git', :commit => '99e0abd'
+
+end

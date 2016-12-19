@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MPKInstagramSourceSession</key>
+	<dict>
+		<key>MPKInstagramClientId</key>
+		<string></string>
+		<key>MPKInstagramSecret</key>
+		<string></string>
+	</dict>
+	<key>MPKFacebookSourceSession</key>
+	<dict>
+		<key>NOTE</key>
+		<string>You MUST register &quot;fb&quot; followed by your facebook app id as a URL Scheme in your apps plist </string>
+		<key>MPKFacebookAppId</key>
+		<string></string>
+		<key>MPKFacebookPermissions</key>
+		<array>
+			<string>public_profile</string>
+			<string>user_photos</string>
+			<string>email</string>
+		</array>
+	</dict>
+	<key>MPKDropboxSourceSession</key>
+	<dict>
+		<key>NOTE</key>
+		<string>You MUST register &quot;db-&quot; followed by your Dropbox App Key as a URL Scheme in your apps plist </string>
+		<key>MPKDropboxAppKey</key>
+		<string></string>
+		<key>MPKDropboxSecret</key>
+		<string></string>
+	</dict>
+	<key>MPKFlickrSourceSession</key>
+	<dict>
+		<key>NOTE</key>
+		<string>You MUST register &quot;fk&quot; followed by your Flickr API Key as a URL Scheme in your apps plist </string>
+		<key>MPKFlickrAPIKey</key>
+		<string></string>
+		<key>MPKFlickrSecret</key>
+		<string></string>
+	</dict>
+	<key>MPKGoogleSourceSession</key>
+	<dict>
+		<key>MPKGoogleClientId</key>
+		<string></string>
+		<key>MPKGoogleClientSecret</key>
+		<string></string>
+	</dict>
+	<key>MPKTwitterSourceSession</key>
+	<dict>
+		<key>MPKTwitterConsumerKey</key>
+		<string></string>
+		<key>MPKTwitterConsumerSecret</key>
+		<string></string>
+	</dict>
+	<key>MPKDeviantArtSourceSession</key>
+	<dict>
+		<key>MPKDeviantArtClientId</key>
+		<string></string>
+		<key>MPKDeviantArtClientSecret</key>
+		<string></string>
+	</dict>
+	<key>MPKLiveSourceSession</key>
+	<dict>
+		<key>MPKLiveClientId</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>
