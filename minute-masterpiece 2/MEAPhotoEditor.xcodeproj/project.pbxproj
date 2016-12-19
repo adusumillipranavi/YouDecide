@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5ADB022469A29615AF8D7C4E /* Pods_MEAPhotoEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA83412D2E9EB12C12A56A5 /* Pods_MEAPhotoEditor.framework */; };
+		830C2BB81DCCF6C00082DA2D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C2BB71DCCF6C00082DA2D /* CollectionViewCell.swift */; };
+		8326B42A1DBE70B900DD6EFC /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326B4291DBE70B900DD6EFC /* FilterViewController.swift */; };
+		834CDDA61DFF252300256C44 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834CDDA51DFF252300256C44 /* Reachability.swift */; };
+		835A941F1DE3662C007BAEEB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835A941E1DE3662C007BAEEB /* AdSupport.framework */; };
+		83BF01271DB7CA1100C7B08B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF01261DB7CA1100C7B08B /* AppDelegate.swift */; };
+		83BF01291DB7CA1100C7B08B /* ImagePickingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BF01281DB7CA1100C7B08B /* ImagePickingViewController.swift */; };
+		83BF012C1DB7CA1100C7B08B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BF012A1DB7CA1100C7B08B /* Main.storyboard */; };
+		83BF012E1DB7CA1100C7B08B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83BF012D1DB7CA1100C7B08B /* Assets.xcassets */; };
+		83BF01311DB7CA1100C7B08B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BF012F1DB7CA1100C7B08B /* LaunchScreen.storyboard */; };
+		83BF01391DB7CB7C00C7B08B /* GData.podspec.json in Resources */ = {isa = PBXBuildFile; fileRef = 83BF01381DB7CB7C00C7B08B /* GData.podspec.json */; };
+		83BF013D1DB91CB900C7B08B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83BF013C1DB91CB900C7B08B /* GoogleService-Info.plist */; };
+		83E226F91E043A8C005083E1 /* Masterpiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E226F81E043A8C005083E1 /* Masterpiece.swift */; };
+		83E226FB1E043DA4005083E1 /* AdobeCreativeSDKCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 83E226FA1E043DA4005083E1 /* AdobeCreativeSDKCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		83E226FD1E043DB5005083E1 /* AdobeCreativeSDKImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 83E226FC1E043DB5005083E1 /* AdobeCreativeSDKImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		83F69B461DDCFD89004A1CFA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F69B451DDCFD89004A1CFA /* MobileCoreServices.framework */; };
+		83F69B481DDCFD93004A1CFA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F69B471DDCFD93004A1CFA /* SystemConfiguration.framework */; };
+		83F69B4A1DDCFD9E004A1CFA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F69B491DDCFD9E004A1CFA /* libc++.tbd */; };
+		83F69B4C1DDCFDA8004A1CFA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F69B4B1DDCFDA8004A1CFA /* libsqlite3.tbd */; };
+		83F69B551DDF6982004A1CFA /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F69B541DDF6982004A1CFA /* Accelerate.framework */; };
+		83F69B571DDF698D004A1CFA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F69B561DDF698D004A1CFA /* CoreData.framework */; };
+		83F69B591DDF69DF004A1CFA /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F69B581DDF69DF004A1CFA /* libsqlite3.0.tbd */; };
+		83F69B5B1DDF69ED004A1CFA /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F69B5A1DDF69ED004A1CFA /* libz.1.2.5.tbd */; };
+		83F69B5D1DDF69F5004A1CFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F69B5C1DDF69F5004A1CFA /* Foundation.framework */; };
+		83F69B5F1DDF69FC004A1CFA /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F69B5E1DDF69FC004A1CFA /* MessageUI.framework */; };
+		83F69B611DDF6A05004A1CFA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F69B601DDF6A05004A1CFA /* OpenGLES.framework */; };
+		83F69B631DDF6A0E004A1CFA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F69B621DDF6A0E004A1CFA /* QuartzCore.framework */; };
+		83F69B671DDF6A2A004A1CFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F69B661DDF6A2A004A1CFA /* UIKit.framework */; };
+		83FDB3B21E01DA1500FE6740 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 83FDB3B11E01DA1500FE6740 /* README.md */; };
+		9FC0BB671DB7CFBC001E38E0 /* SourceKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FC0BB661DB7CFBC001E38E0 /* SourceKeys.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83F69B431DDCFD1C004A1CFA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				83E226FD1E043DB5005083E1 /* AdobeCreativeSDKImage.framework in Embed Frameworks */,
+				83E226FB1E043DA4005083E1 /* AdobeCreativeSDKCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		830C2BB71DCCF6C00082DA2D /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		8326B4291DBE70B900DD6EFC /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		834CDDA51DFF252300256C44 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		835A941E1DE3662C007BAEEB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		83BF01231DB7CA1100C7B08B /* MEAPhotoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MEAPhotoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83BF01261DB7CA1100C7B08B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83BF01281DB7CA1100C7B08B /* ImagePickingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickingViewController.swift; sourceTree = "<group>"; };
+		83BF012B1DB7CA1100C7B08B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83BF012D1DB7CA1100C7B08B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83BF01301DB7CA1100C7B08B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83BF01321DB7CA1100C7B08B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83BF01381DB7CB7C00C7B08B /* GData.podspec.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GData.podspec.json; sourceTree = "<group>"; };
+		83BF013B1DB90DB200C7B08B /* MEAPhotoEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MEAPhotoEditor.entitlements; sourceTree = "<group>"; };
+		83BF013C1DB91CB900C7B08B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		83E226F81E043A8C005083E1 /* Masterpiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Masterpiece.swift; sourceTree = "<group>"; };
+		83E226FA1E043DA4005083E1 /* AdobeCreativeSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdobeCreativeSDKCore.framework; sourceTree = "<group>"; };
+		83E226FC1E043DB5005083E1 /* AdobeCreativeSDKImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdobeCreativeSDKImage.framework; sourceTree = "<group>"; };
+		83F69B451DDCFD89004A1CFA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		83F69B471DDCFD93004A1CFA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		83F69B491DDCFD9E004A1CFA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		83F69B4B1DDCFDA8004A1CFA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		83F69B4D1DDCFDB4004A1CFA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		83F69B4F1DDCFF15004A1CFA /* MEAPhotoEditor_Bridging_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEAPhotoEditor_Bridging_Header.h; sourceTree = SOURCE_ROOT; };
+		83F69B541DDF6982004A1CFA /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		83F69B561DDF698D004A1CFA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		83F69B581DDF69DF004A1CFA /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		83F69B5A1DDF69ED004A1CFA /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		83F69B5C1DDF69F5004A1CFA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		83F69B5E1DDF69FC004A1CFA /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		83F69B601DDF6A05004A1CFA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		83F69B621DDF6A0E004A1CFA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		83F69B661DDF6A2A004A1CFA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		83FDB3B11E01DA1500FE6740 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		84FCAA08D4E41CBFA146BE54 /* Pods-MEAPhotoEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEAPhotoEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MEAPhotoEditor/Pods-MEAPhotoEditor.debug.xcconfig"; sourceTree = "<group>"; };
+		9AA83412D2E9EB12C12A56A5 /* Pods_MEAPhotoEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEAPhotoEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FC0BB661DB7CFBC001E38E0 /* SourceKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SourceKeys.plist; sourceTree = "<group>"; };
+		DA6AD6978B9CA825135ADB37 /* Pods-MEAPhotEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEAPhotEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MEAPhotEditor/Pods-MEAPhotEditor.debug.xcconfig"; sourceTree = "<group>"; };
+		E06E51183F6EEB57D0856447 /* Pods-MEAPhotoEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEAPhotoEditor.release.xcconfig"; path = "Pods/Target Support Files/Pods-MEAPhotoEditor/Pods-MEAPhotoEditor.release.xcconfig"; sourceTree = "<group>"; };
+		F0062BAB403860D2DBFC0315 /* Pods-MEAPhotEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEAPhotEditor.release.xcconfig"; path = "Pods/Target Support Files/Pods-MEAPhotEditor/Pods-MEAPhotEditor.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83BF01201DB7CA1100C7B08B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835A941F1DE3662C007BAEEB /* AdSupport.framework in Frameworks */,
+				83F69B671DDF6A2A004A1CFA /* UIKit.framework in Frameworks */,
+				83F69B461DDCFD89004A1CFA /* MobileCoreServices.framework in Frameworks */,
+				83F69B631DDF6A0E004A1CFA /* QuartzCore.framework in Frameworks */,
+				83F69B611DDF6A05004A1CFA /* OpenGLES.framework in Frameworks */,
+				83F69B5F1DDF69FC004A1CFA /* MessageUI.framework in Frameworks */,
+				83F69B5D1DDF69F5004A1CFA /* Foundation.framework in Frameworks */,
+				83F69B5B1DDF69ED004A1CFA /* libz.1.2.5.tbd in Frameworks */,
+				83F69B591DDF69DF004A1CFA /* libsqlite3.0.tbd in Frameworks */,
+				83F69B571DDF698D004A1CFA /* CoreData.framework in Frameworks */,
+				83F69B551DDF6982004A1CFA /* Accelerate.framework in Frameworks */,
+				83F69B4C1DDCFDA8004A1CFA /* libsqlite3.tbd in Frameworks */,
+				83F69B4A1DDCFD9E004A1CFA /* libc++.tbd in Frameworks */,
+				83F69B481DDCFD93004A1CFA /* SystemConfiguration.framework in Frameworks */,
+				5ADB022469A29615AF8D7C4E /* Pods_MEAPhotoEditor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83BF011A1DB7CA1100C7B08B = {
+			isa = PBXGroup;
+			children = (
+				83E226FC1E043DB5005083E1 /* AdobeCreativeSDKImage.framework */,
+				83E226FA1E043DA4005083E1 /* AdobeCreativeSDKCore.framework */,
+				83FDB3B11E01DA1500FE6740 /* README.md */,
+				834CDDA51DFF252300256C44 /* Reachability.swift */,
+				83F69B4F1DDCFF15004A1CFA /* MEAPhotoEditor_Bridging_Header.h */,
+				83BF01251DB7CA1100C7B08B /* MEAPhotoEditor */,
+				83BF01241DB7CA1100C7B08B /* Products */,
+				DD05FF5C9F19418B4F2B078E /* Pods */,
+				A27DF69655BA3125CFEDA03E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83BF01241DB7CA1100C7B08B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83BF01231DB7CA1100C7B08B /* MEAPhotoEditor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83BF01251DB7CA1100C7B08B /* MEAPhotoEditor */ = {
+			isa = PBXGroup;
+			children = (
+				83BF01261DB7CA1100C7B08B /* AppDelegate.swift */,
+				83F69B751DDF8A2C004A1CFA /* View Controllers */,
+				830C2BB71DCCF6C00082DA2D /* CollectionViewCell.swift */,
+				83BF012A1DB7CA1100C7B08B /* Main.storyboard */,
+				83BF012F1DB7CA1100C7B08B /* LaunchScreen.storyboard */,
+				83F69B771DDF8A81004A1CFA /* Supporting Files */,
+				83F69B761DDF8A5B004A1CFA /* PList */,
+				83BF012D1DB7CA1100C7B08B /* Assets.xcassets */,
+			);
+			path = MEAPhotoEditor;
+			sourceTree = "<group>";
+		};
+		83F69B751DDF8A2C004A1CFA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				83BF01281DB7CA1100C7B08B /* ImagePickingViewController.swift */,
+				8326B4291DBE70B900DD6EFC /* FilterViewController.swift */,
+				83E226F81E043A8C005083E1 /* Masterpiece.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		83F69B761DDF8A5B004A1CFA /* PList */ = {
+			isa = PBXGroup;
+			children = (
+				83BF01321DB7CA1100C7B08B /* Info.plist */,
+				9FC0BB661DB7CFBC001E38E0 /* SourceKeys.plist */,
+				83BF013C1DB91CB900C7B08B /* GoogleService-Info.plist */,
+			);
+			name = PList;
+			sourceTree = "<group>";
+		};
+		83F69B771DDF8A81004A1CFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83BF013B1DB90DB200C7B08B /* MEAPhotoEditor.entitlements */,
+				83BF01381DB7CB7C00C7B08B /* GData.podspec.json */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A27DF69655BA3125CFEDA03E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				835A941E1DE3662C007BAEEB /* AdSupport.framework */,
+				83F69B661DDF6A2A004A1CFA /* UIKit.framework */,
+				83F69B621DDF6A0E004A1CFA /* QuartzCore.framework */,
+				83F69B601DDF6A05004A1CFA /* OpenGLES.framework */,
+				83F69B5E1DDF69FC004A1CFA /* MessageUI.framework */,
+				83F69B5C1DDF69F5004A1CFA /* Foundation.framework */,
+				83F69B5A1DDF69ED004A1CFA /* libz.1.2.5.tbd */,
+				83F69B581DDF69DF004A1CFA /* libsqlite3.0.tbd */,
+				83F69B561DDF698D004A1CFA /* CoreData.framework */,
+				83F69B541DDF6982004A1CFA /* Accelerate.framework */,
+				83F69B4D1DDCFDB4004A1CFA /* libz.tbd */,
+				83F69B4B1DDCFDA8004A1CFA /* libsqlite3.tbd */,
+				83F69B491DDCFD9E004A1CFA /* libc++.tbd */,
+				83F69B471DDCFD93004A1CFA /* SystemConfiguration.framework */,
+				83F69B451DDCFD89004A1CFA /* MobileCoreServices.framework */,
+				9AA83412D2E9EB12C12A56A5 /* Pods_MEAPhotoEditor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD05FF5C9F19418B4F2B078E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84FCAA08D4E41CBFA146BE54 /* Pods-MEAPhotoEditor.debug.xcconfig */,
+				E06E51183F6EEB57D0856447 /* Pods-MEAPhotoEditor.release.xcconfig */,
+				DA6AD6978B9CA825135ADB37 /* Pods-MEAPhotEditor.debug.xcconfig */,
+				F0062BAB403860D2DBFC0315 /* Pods-MEAPhotEditor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83BF01221DB7CA1100C7B08B /* MEAPhotoEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83BF01351DB7CA1100C7B08B /* Build configuration list for PBXNativeTarget "MEAPhotoEditor" */;
+			buildPhases = (
+				6F894C544A5155B81589D816 /* [CP] Check Pods Manifest.lock */,
+				83BF011F1DB7CA1100C7B08B /* Sources */,
+				83BF01201DB7CA1100C7B08B /* Frameworks */,
+				83BF01211DB7CA1100C7B08B /* Resources */,
+				6E0F33AA754EACC070857A1C /* [CP] Embed Pods Frameworks */,
+				ABF362F215BDF0532600A861 /* [CP] Copy Pods Resources */,
+				83F69B431DDCFD1C004A1CFA /* Embed Frameworks */,
+				83F69B441DDCFD52004A1CFA /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MEAPhotoEditor;
+			productName = MEAPhotoEditor;
+			productReference = 83BF01231DB7CA1100C7B08B /* MEAPhotoEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83BF011B1DB7CA1100C7B08B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = MeaMobile;
+				TargetAttributes = {
+					83BF01221DB7CA1100C7B08B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BKYYVD7TSA;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 83BF011E1DB7CA1100C7B08B /* Build configuration list for PBXProject "MEAPhotoEditor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83BF011A1DB7CA1100C7B08B;
+			productRefGroup = 83BF01241DB7CA1100C7B08B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83BF01221DB7CA1100C7B08B /* MEAPhotoEditor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83BF01211DB7CA1100C7B08B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83BF01311DB7CA1100C7B08B /* LaunchScreen.storyboard in Resources */,
+				83BF012E1DB7CA1100C7B08B /* Assets.xcassets in Resources */,
+				83BF012C1DB7CA1100C7B08B /* Main.storyboard in Resources */,
+				9FC0BB671DB7CFBC001E38E0 /* SourceKeys.plist in Resources */,
+				83BF01391DB7CB7C00C7B08B /* GData.podspec.json in Resources */,
+				83BF013D1DB91CB900C7B08B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E0F33AA754EACC070857A1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MEAPhotoEditor/Pods-MEAPhotoEditor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F894C544A5155B81589D816 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		83F69B441DDCFD52004A1CFA /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/Fabric/Fabric.framework/run ec5002c89fb37e7faef3fc61a17e0b371e5f2cb0 d43254d6095ebee8cfc7b8a6e2e141c2be8c189684f4c760dbdfec0fd88af350\n";
+		};
+		ABF362F215BDF0532600A861 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MEAPhotoEditor/Pods-MEAPhotoEditor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83BF011F1DB7CA1100C7B08B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83FDB3B21E01DA1500FE6740 /* README.md in Sources */,
+				83BF01291DB7CA1100C7B08B /* ImagePickingViewController.swift in Sources */,
+				830C2BB81DCCF6C00082DA2D /* CollectionViewCell.swift in Sources */,
+				83E226F91E043A8C005083E1 /* Masterpiece.swift in Sources */,
+				83BF01271DB7CA1100C7B08B /* AppDelegate.swift in Sources */,
+				834CDDA61DFF252300256C44 /* Reachability.swift in Sources */,
+				8326B42A1DBE70B900DD6EFC /* FilterViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		83BF012A1DB7CA1100C7B08B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83BF012B1DB7CA1100C7B08B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83BF012F1DB7CA1100C7B08B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83BF01301DB7CA1100C7B08B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83BF01331DB7CA1100C7B08B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83BF01341DB7CA1100C7B08B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83BF01361DB7CA1100C7B08B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84FCAA08D4E41CBFA146BE54 /* Pods-MEAPhotoEditor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MEAPhotoEditor/MEAPhotoEditor.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = BKYYVD7TSA;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MEAPhotoEditor/Frameworks/AdobeCreativeSDKDynamicFrameworks",
+				);
+				INFOPLIST_FILE = MEAPhotoEditor/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "we-are-mea.MinuteMasterpiece";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "857d4d79-ccba-443a-b560-7187ecb92e9b";
+				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: we-are-mea.MinuteMasterpiece";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		83BF01371DB7CA1100C7B08B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E06E51183F6EEB57D0856447 /* Pods-MEAPhotoEditor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MEAPhotoEditor/MEAPhotoEditor.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = BKYYVD7TSA;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MEAPhotoEditor/Frameworks/AdobeCreativeSDKDynamicFrameworks",
+				);
+				INFOPLIST_FILE = MEAPhotoEditor/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "we-are-mea.MinuteMasterpiece";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "857d4d79-ccba-443a-b560-7187ecb92e9b";
+				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: we-are-mea.MinuteMasterpiece";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83BF011E1DB7CA1100C7B08B /* Build configuration list for PBXProject "MEAPhotoEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83BF01331DB7CA1100C7B08B /* Debug */,
+				83BF01341DB7CA1100C7B08B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83BF01351DB7CA1100C7B08B /* Build configuration list for PBXNativeTarget "MEAPhotoEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83BF01361DB7CA1100C7B08B /* Debug */,
+				83BF01371DB7CA1100C7B08B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83BF011B1DB7CA1100C7B08B /* Project object */;
+}
